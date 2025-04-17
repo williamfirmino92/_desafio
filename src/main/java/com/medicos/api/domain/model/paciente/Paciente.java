@@ -1,4 +1,4 @@
-package com.medicos.api.model.paciente;
+package com.medicos.api.domain.model.paciente;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

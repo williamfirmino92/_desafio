@@ -1,4 +1,4 @@
-package com.medicos.api.model.paciente;
+package com.medicos.api.domain.model.paciente;
 
 public record DadosListagemPacientes(Integer id, String nome, String email, String telefone) {
     public DadosListagemPacientes(Paciente paciente) {

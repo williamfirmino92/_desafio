@@ -1,4 +1,4 @@
-package com.medicos.api.model.endereco;
+package com.medicos.api.domain.model.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @Embeddable
 public class Endereco {
-    
+
     private String logradouro;
     private String bairro;
     private String cep;
@@ -31,24 +31,24 @@ public class Endereco {
     public void atualizarInformacoes(DadosEndereco dados) {
         if (dados.logradouro() != null) {
             this.logradouro = dados.logradouro();
-        }    
-        if (dados.bairro() != null) {    
+        }
+        if (dados.bairro() != null) {
             this.bairro = dados.bairro();
         }
         if (dados.cep() != null) {
-            this.cep = dados.cep();    
+            this.cep = dados.cep();
         }
         if (dados.uf() != null) {
-            this.uf = dados.uf();    
+            this.uf = dados.uf();
         }
         if (dados.cidade() != null) {
-            this.cidade = dados.cidade();    
+            this.cidade = dados.cidade();
         }
         if (dados.numero() != null) {
-            this.numero = dados.numero();    
+            this.numero = dados.numero();
         }
         if (dados.complemento() != null) {
-            this.complemento = dados.complemento();    
+            this.complemento = dados.complemento();
         }
     }
 }

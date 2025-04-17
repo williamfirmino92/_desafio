@@ -1,4 +1,4 @@
-package com.medicos.api.model.medico;
+package com.medicos.api.domain.model.medico;
 
 import java.util.List;
 

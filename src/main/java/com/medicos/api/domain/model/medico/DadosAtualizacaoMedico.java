@@ -1,8 +1,7 @@
-package com.medicos.api.model.medico;
+package com.medicos.api.domain.model.medico;
 
-import com.medicos.api.model.endereco.DadosEndereco;
-
+import com.medicos.api.domain.model.endereco.DadosEndereco;
 
 public record DadosAtualizacaoMedico(Integer id, String nome, String email, DadosEndereco endereco) {
-    
+
 }
